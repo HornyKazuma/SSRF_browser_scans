@@ -10,7 +10,7 @@ for (let i = 0; i <= 255; i++) {
         let ip = ipBase + i + '.' + j + '.1';
 
         // Отправляем запрос на каждый IP-адрес
-        fetch(`http://${ip}`)
+        fetch(`https://${ip}`)
             .then(response => {
                 // Если получен ответ, добавляем IP-адрес в массив и выводим его в консоль
                 responsiveIps.push(ip);
